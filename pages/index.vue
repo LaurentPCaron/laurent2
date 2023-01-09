@@ -1,5 +1,6 @@
 <template>
-  <font-awesome-icon icon="fa-regular fa-lemon" />
+  <font-awesome-icon icon="fa-solid fa-leaf" />
+  <font-awesome-icon icon="fa-solid fa-bars" />
 </template>
 
 <script>
