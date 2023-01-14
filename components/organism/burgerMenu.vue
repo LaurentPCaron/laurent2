@@ -2,8 +2,13 @@
   <button @click="togglingMenu">
     <font-awesome-icon icon="fa-solid fa-bars" class="text-4xl text-white" />
   </button>
+  <div
+    class="absolute top-0 left-0 w-full h-screen -z-10 transition-colors duration-700"
+    :class="isOpen ? 'bg-black/30' : ''"
+    @[isOpen&&`click`]="togglingMenu"
+  ></div>
   <nav
-    class="bg-pink-600 fixed top-20 left-0 h-full w-1/4 transition-all duration-700"
+    class="bg-black text-white fixed top-20 left-0 h-full w-1/4 transition-all duration-700"
     :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
   >
     <ul class="ml-5" :class="menuItemsState">
