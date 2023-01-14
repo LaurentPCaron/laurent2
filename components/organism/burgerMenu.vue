@@ -3,8 +3,8 @@
     <font-awesome-icon icon="fa-solid fa-bars" class="text-4xl text-white" />
   </button>
   <div
-    class="absolute top-0 left-0 w-full h-screen -z-10 transition-colors duration-700"
-    :class="isOpen ? 'bg-black/30' : ''"
+    class="absolute top-0 left-0 w-full h-screen transition-colors duration-700"
+    :class="[{ 'bg-black/50': isOpen }, backgroundState]"
     @[isOpen&&`click`]="togglingMenu"
   ></div>
   <nav
@@ -30,6 +30,7 @@ export default {
     return {
       isOpen: false,
       menuItemsState: 'hidden',
+      backgroundState: '-z-10',
     };
   },
   watch: {
@@ -37,6 +38,7 @@ export default {
       if (!isOpen) {
         setTimeout(() => {
           this.menuItemsState = 'hidden';
+          this.backgroundState = '-z-10';
         }, 700);
       }
     },
@@ -46,6 +48,7 @@ export default {
       this.isOpen = !this.isOpen;
       if (this.isOpen) {
         this.menuItemsState = 'block';
+        this.backgroundState = 'z-0';
       }
     },
   },
