@@ -2,4 +2,13 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss'],
   css: ['@fortawesome/fontawesome-svg-core/styles.css'],
+  build: {
+    transpile: [
+      '@fortawesome/vue-fontawesome',
+      '@fortawesome/fontawesome-svg-core',
+      '@fortawesome/pro-solid-svg-icons',
+      '@fortawesome/pro-regular-svg-icons',
+      '@fortawesome/free-brands-svg-icons',
+    ],
+  },
 });
