@@ -3,14 +3,13 @@
     <font-awesome-icon icon="fa-solid fa-leaf" class="text-6xl text-white" />
     <OrganismBurgerMenu />
   </header>
-  <div class="flex justify-center pt-16 mb-24 bg-neutral-700">
-    <img
-      class="w-1/5 -mb-24 rounded-full border-white border-8"
-      src="~/assets/img/profil.png"
-      alt=""
-    />
+  <div class="h-full flex flex-1">
+    <div class="bg-pink-50 w-6/12"></div>
+    <div class="flex items-center w-5/12">
+      <img class="" src="~/assets/img/Eggman_02.png" alt="" />
+    </div>
+    <div class="bg-green-700 w-1/12"></div>
   </div>
-  <h1 class="text-center">MON SITE WEB</h1>
 </template>
 
 <script>
