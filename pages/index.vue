@@ -4,11 +4,13 @@
     <OrganismBurgerMenu />
   </header>
   <div class="flex-1 h-full flex">
-    <div class="w-6/12"></div>
+    <div class="w-6/12 flex flex-col justify-center">
+      <h1 class="text-center">Laurent-Philippe Caron</h1>
+    </div>
     <div class="w-5/12 h-full">
       <img
         class="object-cover h-full w-full"
-        src="~/assets/img/profil.jpg"
+        src="~/assets/img/profil.png"
         alt=""
       />
     </div>

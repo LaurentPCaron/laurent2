@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 html {
-  @apply bg-neutral-900;
+  @apply bg-neutral-900 text-white;
 }
 body {
   @apply h-screen overflow-hidden flex;
+}
+h1 {
+  @apply text-7xl font-bold;
 }
