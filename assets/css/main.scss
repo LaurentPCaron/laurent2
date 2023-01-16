@@ -5,3 +5,6 @@
 html {
   @apply bg-neutral-900;
 }
+body {
+  @apply h-screen overflow-hidden flex;
+}
