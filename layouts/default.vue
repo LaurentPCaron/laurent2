@@ -1,3 +1,3 @@
 <template>
-  <div class="h-full"><slot /></div>
+  <div class="h-[2000px]"><slot /></div>
 </template>

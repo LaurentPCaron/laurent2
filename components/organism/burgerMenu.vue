@@ -9,7 +9,7 @@
       @[isOpen&&`click`]="togglingMenu"
     ></div>
     <nav
-      class="flex justify-center bg-black text-white fixed top-0 right-0 h-full w-1/4 transition-all duration-700"
+      class="flex justify-center bg-black text-white fixed top-0 right-0 h-full w-3/4 transition-all duration-700"
       :class="isOpen ? 'translate-x-0' : 'translate-x-full'"
     >
       <ul class="text-right" :class="menuItemsState">
