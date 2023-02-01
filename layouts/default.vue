@@ -1,3 +1,3 @@
 <template>
-  <div class=""><slot /></div>
+  <div class="px-14"><slot /></div>
 </template>
