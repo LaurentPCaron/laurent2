@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  @apply bg-mains text-lighter;
+  @apply bg-mains text-lighter overflow-x-hidden;
 }
 
 h1 {
