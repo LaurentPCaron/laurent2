@@ -2,7 +2,7 @@
   <svg class="progress-ring" :width="size" :height="size">
     <circle
       class="circle"
-      stroke="white"
+      :stroke="color"
       :stroke-width="strokeWidth"
       fill="transparent"
       :r="r"
@@ -26,9 +26,14 @@ const props = defineProps({
     type: Number,
     default: 25,
   },
+  color: {
+    type: String,
+    default: '#fff',
+  },
 });
 const r = ref(props.size / 2 - props.strokeWidth);
 const circumference = ref(2 * Math.PI * r.value);
+
 const strokeDashoffset = () => {
   return circumference.value - (props.progress / 100) * circumference.value;
 };
