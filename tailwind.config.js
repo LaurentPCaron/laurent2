@@ -8,5 +8,10 @@ module.exports = {
       inherit: 'inherit',
       transparent: 'transparent',
     },
+    extend: {
+      fontFamily: {
+        retro: ['W95FA', 'sans-serif'],
+      },
+    },
   },
 };

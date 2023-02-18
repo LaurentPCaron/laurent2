@@ -1,32 +1,20 @@
 <template>
-  <div class="flex flex-col md:flex-row">
-    <div class="bleed bg-light md:h-fit md:flex md:justify-end">
-      <div
-        class="mx-auto md:pl-24 my-24 w-10/12 max-w-7xl md:flex md:flex-col items-end"
-      >
-        <p class="text-dark md:text-3xl md:w-6/12">
-          Dévelopeur front-end porfessionel depuis 2020, spécialiser en Vue.js,
-          SCSS. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Incidunt porro quis et debitis harum odit sunt ratione molestiae,
-          doloribus distinctio, error velit nihil excepturi nesciunt, optio
-          temporibus adipisci unde nam!
-        </p>
-        <AtomSimpleButton class="mt-5">Curiculun vitae</AtomSimpleButton>
-      </div>
-    </div>
+  <div class="pt-24 flex items-center flex-col font-retro">
     <div
-      class="max-w-md md:w-6/12 md:max-w-none self-center md:self-start z-10 -mt-16 md:mt-10"
+      class="flex flex-col justify-center items-center text-light py-8 w-2/3 text-center"
     >
-      <img
-        class="object-cover md:w-full md:max-w-md md:ml-auto"
-        src="~/assets/img/profil.jpg"
-        alt=""
-      />
-      <h1
-        class="relative -mt-28 pr-4 text-right mx-auto md:mr-0 text-strike md:max-w-md"
-      >
-        Laurent-Philippe Caron
-      </h1>
+      <h1 class="text-shadow">Laurent-Philippe Caron</h1>
+      <p class="self-end text-4xl mr-5">Dévelopeur front-end</p>
+    </div>
+
+    <div>
+      <ul class="relative menu mt-10 flex flex-col items-center gap-5">
+        <li class="">
+          <a href="#">Game Start</a>
+        </li>
+        <li><a href="#">À propos de moi</a></li>
+        <li><a href="#">Résumé</a></li>
+      </ul>
     </div>
   </div>
 </template>
@@ -35,4 +23,12 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.menu > li {
+  @apply text-xl h-10 w-fit;
+  &:hover,
+  &:focus-within {
+    @apply before:content-['>'] before:absolute before:-left-4   after:content-['<'] after:absolute after:ml-1.5 scale-150;
+  }
+}
+</style>
