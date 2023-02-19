@@ -8,7 +8,7 @@
       />
     </div>
     <div class="w-2/4">
-      <AtomProgressBar :progress="100" color="blue" class="h-2" />
+      <AtomProgressBar :progress="56" color="0, 0, 204" class="" />
     </div>
   </div>
 </template>
