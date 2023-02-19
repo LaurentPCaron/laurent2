@@ -1,13 +1,12 @@
 <template>
-  <div class="flex items-center container">
+  <div class="flex items-center container w-full">
     <div class="container-label flex justify-between text-dark">
       <p class="">{{ label }}</p>
       <p>{{ `${progress}/100` }}</p>
     </div>
-    <font-awesome-icon
-      class="container-icon text-dark fa-3x mr-5"
-      :icon="icon"
-    />
+    <div class="container-icon">
+      <font-awesome-icon class="text-dark fa-3x mr-5" :icon="icon" />
+    </div>
     <div class="container-bar bg-[black] h-6 w-full rounded-md">
       <div class="rounded-md h-full" />
     </div>
@@ -53,8 +52,9 @@ const _colorDarker = computed(() => {
 
 <style lang="scss" scoped>
 .container {
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 12fr;
+  grid-template-columns: 5rem auto;
   grid-template-areas:
     'icon label'
     'icon bar';
