@@ -1,3 +1,10 @@
+export default defineNuxtPlugin(() => {
+  return {
+    provide: {
+      colorConvertor: { hexToHSL, b: 'b' },
+    },
+  };
+});
 function hexToHSL(H) {
   // Convert hex to RGB first
   let r = 0,
@@ -37,5 +44,5 @@ function hexToHSL(H) {
   s = +(s * 100).toFixed(1);
   l = +(l * 100).toFixed(1);
 
-  return 'hsl(' + h + ',' + s + '%,' + l + '%)';
+  return { h, s, l };
 }
