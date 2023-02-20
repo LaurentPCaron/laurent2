@@ -10,7 +10,7 @@
       </ul>
 
       <div class="ml-auto">
-        <OrganismBurgerMenu class="md:hidden md:mt-0 mr-5" />
+        <MoleculeBurgerMenu class="md:hidden md:mt-0 mr-5" />
       </div>
     </div>
   </header>

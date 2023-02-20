@@ -1,0 +1,39 @@
+[
+  {
+    "label": "Trio de base",
+    "image": "/img/basic-web.jpg",
+    "skils": [
+      {
+        "label": "HTML",
+        "percentage": 80,
+        "faIcon": "fa-brands fa-html5"
+      },
+      {
+        "label": "CSS/SCSS",
+        "percentage": 70,
+        "faIcon": "fa-brands fa-sass"
+      },
+      {
+        "label": "Java Script",
+        "percentage": 75,
+        "faIcon": "fa-brands fa-js"
+      }
+    ]
+  },
+  {
+    "label": "Front-end",
+    "image": "/img/Javascript-shield.png",
+    "skils": [
+      {
+        "label": "VueJs",
+        "percentage": 80,
+        "faIcon": "fa-brands fa-vuejs"
+      },
+      {
+        "label": "Nuxt",
+        "percentage": 70,
+        "icon": "/img/icons/nuxt.svg"
+      }
+    ]
+  }
+]

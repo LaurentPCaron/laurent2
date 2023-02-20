@@ -1,13 +1,18 @@
 <template>
-  <div class="flex items-center container w-full">
-    <div class="container-label flex justify-between text-dark">
+  <div class="flex items-center contain w-full">
+    <div class="contain-label flex justify-between text-dark">
       <p class="">{{ label }}</p>
       <p>{{ `${progress}/100` }}</p>
     </div>
-    <div class="container-icon">
-      <font-awesome-icon class="text-dark fa-3x mr-5" :icon="icon" />
+    <div class="contain-icon h-full">
+      <font-awesome-icon
+        v-if="faIcon"
+        class="text-dark fa-3x mr-5"
+        :icon="faIcon"
+      />
+      <img v-if="icon" class="h-full" :src="icon" alt="" />
     </div>
-    <div class="container-bar bg-[black] h-6 w-full rounded-md">
+    <div class="contain-bar bg-[black] h-6 w-full rounded-md">
       <div class="rounded-md h-full" />
     </div>
   </div>
@@ -30,7 +35,9 @@ const props = defineProps({
   },
   icon: {
     type: String,
-    default: 'fa-solid fa-triangle-exclamation',
+  },
+  faIcon: {
+    type: String,
   },
 });
 
@@ -51,7 +58,7 @@ const _colorDarker = computed(() => {
 </script>
 
 <style lang="scss" scoped>
-.container {
+.contain {
   width: 100%;
   display: grid;
   grid-template-columns: 5rem auto;

@@ -1,7 +1,7 @@
 <template>
   <OrganismHomePart />
 
-  <MoleculeStatusCard />
+  <OrganismSkills />
 </template>
 
 <style lang="scss" scoped></style>
