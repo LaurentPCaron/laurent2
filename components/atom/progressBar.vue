@@ -4,7 +4,7 @@
       <p class="">{{ label }}</p>
       <p>{{ `${progress}/100` }}</p>
     </div>
-    <div class="contain-icon h-full">
+    <div class="contain-icon h-full flex items-center">
       <font-awesome-icon
         v-if="faIcon"
         class="text-dark fa-3x mr-5"
