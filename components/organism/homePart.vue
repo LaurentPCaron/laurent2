@@ -1,7 +1,7 @@
 <template>
   <div class="pt-24 flex items-center flex-col font-retro">
     <div
-      class="flex flex-col justify-center items-center text-light py-8 w-2/3 text-center"
+      class="flex flex-col justify-center items-center text-light py-8 md:w-2/3 text-center"
     >
       <h1 class="text-shadow">Laurent-Philippe Caron</h1>
       <p class="self-end text-4xl mr-5">Dévelopeur front-end</p>

@@ -5,7 +5,7 @@
     <div class="container-image flex ml-10 justify-center">
       <img class="object-cover h-32 md:h-auto" :src="image" alt="" />
     </div>
-    <div class="container-bars my-5 flex flex-col gap-4">
+    <div class="container-bars my-5 flex flex-col justify-center gap-4">
       <AtomProgressBar
         v-for="({ icon, faIcon, label, percentage }, index) in skills"
         :key="index"
@@ -57,7 +57,8 @@ const getColor = index => {
     'label image'
     'bars bars';
   @media (min-width: 768px) {
-    grid-template-columns: 175px 1fr;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 1fr 240px;
     grid-template-areas:
       'image label '
       'left bars';
