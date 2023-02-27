@@ -4,8 +4,8 @@
       <font-awesome-icon icon="fa-solid fa-bars" class="text-4xl text-white" />
     </button>
     <div
-      class="absolute top-0 right-0 w-full h-screen transition-colors duration-700"
-      :class="[{ 'bg-black/50': isOpen }, backgroundState]"
+      class="absolute top-0 right-0 transition-colors duration-700"
+      :class="[{ 'bg-black/50 w-full h-screen': isOpen }, backgroundState]"
       @[isOpen&&`click`]="togglingMenu"
     ></div>
     <nav

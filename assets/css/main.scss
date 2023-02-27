@@ -39,3 +39,11 @@ p {
 .text-shadow {
   text-shadow: 2px 5px 0px #fff;
 }
+
+.aspect-1x1 {
+  @apply relative pb-[100%];
+
+  & > img {
+    @apply absolute object-cover w-full h-full;
+  }
+}
