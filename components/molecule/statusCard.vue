@@ -1,10 +1,9 @@
 <template>
   <div class="container">
-    <div class="container-bg bg-light -skew-x-12 rounded-xl -z-10" />
+    <div class="container-bg bg-ff rounded-lg border-2 -z-10 border-lighter" />
     <h3 class="container-label ml-5">{{ label }}</h3>
-    <div class="container-image flex ml-10 justify-center">
-      <img class="object-cover h-32 md:h-auto" :src="image" alt="" />
-    </div>
+    <img class="container-image aspect-1x1" :src="image" alt="" />
+
     <div class="container-bars my-5 flex flex-col justify-center gap-4">
       <AtomProgressBar
         v-for="({ icon, faIcon, label, percentage }, index) in skills"
@@ -14,7 +13,7 @@
         :faIcon="faIcon"
         :label="label"
         :color="getColor(index)"
-        class="bar"
+        class="pr-5"
       />
     </div>
   </div>
@@ -71,6 +70,7 @@ const getColor = index => {
       grid-row-end: left;
       grid-column-start: image;
       grid-column-end: image;
+      align-self: end;
     }
   }
   &-label {
@@ -88,16 +88,6 @@ const getColor = index => {
       grid-column-start: image;
       grid-column-end: bars;
     }
-  }
-}
-
-.bar {
-  @apply pl-7 md:pl-0;
-  &:nth-child(2) {
-    @apply -ml-5;
-  }
-  &:nth-child(3) {
-    @apply -ml-7;
   }
 }
 </style>

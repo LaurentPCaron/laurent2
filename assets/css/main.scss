@@ -44,5 +44,5 @@ p {
 
 //background
 .bg-ff {
-  background-color: #0000af;
+  @apply bg-gradient-to-br from-boxbg to-mains;
 }
