@@ -1,9 +1,11 @@
 <template>
-  <OrganismHomePart />
+  <div class="felx flex-col">
+    <OrganismHomePart />
 
-  <OrganismProjects />
+    <OrganismProjects />
 
-  <OrganismSkills />
+    <OrganismSkills />
+  </div>
 </template>
 <script setup>
 const testfunct = index => {
