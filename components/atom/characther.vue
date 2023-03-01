@@ -7,7 +7,9 @@
       :id="`${name}-${id}`"
       :value="id"
     />
-    <div class="contain cursor-pointer aspect-1x1 border-4 md:border-8">
+    <div
+      class="cursor-pointer aspect-1x1 border-4 md:border-[12px] border-[gray] border-inset"
+    >
       <img
         src="https://free4kwallpapers.com/uploads/originals/2015/12/14/sonic-riders-1080p-game-wallpaper.jpg"
         alt=""

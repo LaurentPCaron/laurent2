@@ -38,8 +38,12 @@ p {
   @apply relative pb-[100%];
 
   & > img {
-    @apply absolute object-cover w-full h-full;
+    @apply absolute object-cover w-[100%] h-full;
   }
+}
+
+.border-inset {
+  border-style: inset;
 }
 
 //background
