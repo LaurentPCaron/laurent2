@@ -1,8 +1,11 @@
 <template>
-  <div class="container">
-    <div class="container-bg bg-ff rounded-lg border-2 -z-10 border-lighter" />
-    <h3 class="container-label ml-5">{{ label }}</h3>
-    <img class="container-image aspect-1x1" :src="image" alt="" />
+  <div class="container px-6 bg-ff rounded-lg border-2 border-lighter">
+    <h3 class="container-label">{{ label }}</h3>
+    <div class="container-image w-full ml-6">
+      <div class="aspect-1x1 bg-lighter border-2 border-lighter">
+        <img class="" :src="image" alt="" />
+      </div>
+    </div>
 
     <div class="container-bars my-5 flex flex-col justify-center gap-4">
       <AtomProgressBar
@@ -56,38 +59,24 @@ const getColor = index => {
     'label image'
     'bars bars';
   @media (min-width: 768px) {
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 20% 1fr;
     grid-template-rows: 1fr 240px;
     grid-template-areas:
-      'image label '
-      'left bars';
+      'image label'
+      'image bars';
     column-gap: 3rem;
   }
 
   &-image {
-    @media (min-width: 768px) {
-      grid-row-start: image;
-      grid-row-end: left;
-      grid-column-start: image;
-      grid-column-end: image;
-      align-self: end;
-    }
+    grid-area: image;
+    align-self: center;
   }
   &-label {
     grid-area: label;
-    align-self: end;
+    @apply self-center;
   }
   &-bars {
     grid-area: bars;
-  }
-  &-bg {
-    grid-area: bars;
-    @media (min-width: 768px) {
-      grid-row-start: left;
-      grid-row-end: left;
-      grid-column-start: image;
-      grid-column-end: bars;
-    }
   }
 }
 </style>
