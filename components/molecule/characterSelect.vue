@@ -1,7 +1,7 @@
 <template>
-  <div class="grid grid-cols-4 gap-3 border-2 w-10/12 bg-boxbg">
+  <div class="grid grid-cols-5 gap-3 border-2 px-16 w-full bg-boxbg">
     <AtomCharacther
-      class="flex-[0_0_33%]"
+      class=""
       v-for="(n, index) in test"
       name="projects"
       :id="index"

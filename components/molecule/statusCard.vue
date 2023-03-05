@@ -1,11 +1,12 @@
 <template>
-  <div class="container px-6 bg-ff rounded-lg border-2 border-lighter">
+  <div class="container pl-2 md:px-6 bg-ff rounded-lg border-2 border-lighter">
     <h3 class="container-label">{{ label }}</h3>
-    <div class="container-image w-full ml-6">
-      <div class="aspect-1x1 bg-lighter border-2 border-lighter">
-        <img class="" :src="image" alt="" />
-      </div>
-    </div>
+
+    <img
+      class="aspect-square w-2/4 md:w-full container-image bg-lighter border-2 border-lighter"
+      :src="image"
+      alt=""
+    />
 
     <div class="container-bars my-5 flex flex-col justify-center gap-4">
       <AtomProgressBar
@@ -69,7 +70,7 @@ const getColor = index => {
 
   &-image {
     grid-area: image;
-    align-self: center;
+    @apply place-self-end md:self-center;
   }
   &-label {
     grid-area: label;

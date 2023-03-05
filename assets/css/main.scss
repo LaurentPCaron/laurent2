@@ -35,10 +35,10 @@ p {
 
 //Outils
 .aspect-1x1 {
-  @apply relative pb-[100%];
+  @apply aspect-square;
 
   & > img {
-    @apply absolute object-cover w-[100%] h-full;
+    @apply object-cover w-full h-full;
   }
 }
 
