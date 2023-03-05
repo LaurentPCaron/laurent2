@@ -10,15 +10,44 @@
     <img
       src="https://free4kwallpapers.com/uploads/originals/2015/12/14/sonic-riders-1080p-game-wallpaper.jpg"
       alt=""
-      class="cursor-pointer aspect-square w-full border-4 md:border-[12px] border-[rgba(0,0,0,0.33)] border-inset object-cover"
+      class="cursor-pointer aspect-square w-full border-4 md:border-[12px] border-[rgba(0,0,0,0.33)] border-inset object-cover brightness-50"
     />
     <p
-      class="hidden absolute -bottom-5 md:-bottom-10 text-3xl md:text-5xl font-bold"
+      class="hidden text-strike absolute bottom-5 md:bottom-14 md:left-3 text-3xl md:text-5xl font-bold"
       aria-hidden="true"
     >
       1P
     </p>
-    <div class="cursor absolute top-0 w-full h-full"></div>
+    <div
+      class="cursor hidden absolute top-0 w-12/12 h-full justify-center items-center"
+    >
+      <svg class="w-12/12 flashing" viewBox="0 0 100 100" width="90%">
+        <path
+          d="M25,2 L2,2 L2,25"
+          fill="none"
+          stroke="white"
+          stroke-width="3"
+        />
+        <path
+          d="M2,75 L2,98 L25,98"
+          fill="none"
+          stroke="white"
+          stroke-width="3"
+        />
+        <path
+          d="M75,98 L98,98 L98,75"
+          fill="none"
+          stroke="white"
+          stroke-width="3"
+        />
+        <path
+          d="M98,25 L98,2 L75,2"
+          fill="none"
+          stroke="white"
+          stroke-width="3"
+        />
+      </svg>
+    </div>
   </label>
 </template>
 
@@ -41,10 +70,27 @@ const props = defineProps({
   & ~ p {
     @apply block;
   }
+  & ~ img {
+    @apply brightness-100;
+  }
+  & ~ .cursor {
+    @apply flex;
+  }
 }
 
-.cursor {
-  background-color: blue;
-  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='10' stroke-dasharray='20%2c180' stroke-dashoffset='10' stroke-linecap='square'/%3e%3c/svg%3e");
+.flashing {
+  animation-name: flash;
+  animation-duration: 300ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes flash {
+  from {
+    width: 90%;
+  }
+  to {
+    width: 88%;
+  }
 }
 </style>
