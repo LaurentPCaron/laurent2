@@ -1,5 +1,5 @@
 <template>
-  <label class="w-full relative" :aria-label="`${name}-${id}`">
+  <label class="relative" :aria-label="`${name}-${id}`">
     <input
       class="opacity-0 sr-only"
       type="radio"
@@ -13,15 +13,15 @@
       class="cursor-pointer aspect-square w-full border-4 md:border-[12px] border-[rgba(0,0,0,0.33)] border-inset object-cover brightness-50"
     />
     <p
-      class="hidden text-strike absolute bottom-5 md:bottom-14 md:left-3 text-3xl md:text-5xl font-bold"
+      class="hidden text-strike absolute bottom-14 md:left-3 text-3xl md:text-5xl font-bold"
       aria-hidden="true"
     >
       1P
     </p>
     <div
-      class="cursor hidden absolute top-0 w-12/12 h-full justify-center items-center"
+      class="cursor hidden absolute top-0 h-full justify-center items-center"
     >
-      <svg class="w-12/12 flashing" viewBox="0 0 100 100" width="90%">
+      <svg class="flashing" viewBox="0 0 100 100" width="90%">
         <path
           d="M25,2 L2,2 L2,25"
           fill="none"

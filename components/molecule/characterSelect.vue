@@ -1,5 +1,7 @@
 <template>
-  <div class="grid grid-cols-5 gap-3 border-2 px-16 w-full bg-boxbg">
+  <div
+    class="grid grid-cols-2 md:grid-cols-5 items-center gap-3 border-2 px-16 bg-boxbg"
+  >
     <AtomCharacther
       class=""
       v-for="(n, index) in test"
