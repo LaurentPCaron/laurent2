@@ -1,20 +1,17 @@
 <template>
-  <div class="pt-24 flex items-center flex-col font-retro">
-    <div
-      class="flex flex-col justify-center items-center text-light py-8 md:w-2/3 text-center"
-    >
+  <div
+    class="pt-24 grid grid-rows-2 items-center justify-items-center font-retro"
+  >
+    <div class="border-4 text-light py-8 text-center w-10/12">
       <h1 class="text-shadow">Laurent-Philippe Caron</h1>
       <p class="self-end text-4xl mr-5">Dévelopeur front-end</p>
     </div>
 
     <div>
-      <ul class="relative menu mt-10 flex flex-col items-center gap-5">
-        <li class="">
-          <a href="#">Game Start</a>
-        </li>
-        <li><a href="#">À propos de moi</a></li>
-        <li><a href="#">Résumé</a></li>
-      </ul>
+      <button class="text-5xl flex flex-col">
+        <span>Scroll to start</span>
+        <span class="text-8xl rotate-90 up-and-down">></span>
+      </button>
     </div>
   </div>
 </template>

@@ -1,3 +1,5 @@
+@use 'animations.scss';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,7 +14,7 @@ html {
 }
 
 h1 {
-  @apply text-5xl md:text-6xl lg:text-8xl font-bold mb-5;
+  @apply text-5xl md:text-6xl lg:text-9xl font-bold mb-5;
 }
 h2 {
   @apply text-3xl md:text-4xl lg:text-6xl font-bold mb-5;
@@ -46,7 +48,7 @@ p {
   border-style: inset;
 }
 
-//background
+//box
 .bg-ff {
   @apply bg-gradient-to-br from-boxbg to-mains;
 }
