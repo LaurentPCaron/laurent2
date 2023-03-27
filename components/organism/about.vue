@@ -1,6 +1,6 @@
 <template>
-  <MoleculeBox class="flex px-5 py-2">
-    <AtomCircleImage class="h-60" />
+  <MoleculeBox class="flex flex-col md:flex-row items-center px-5 py-2">
+    <AtomCircleImage class="w-60" />
     <div class="mx-8 my-3">
       <h2>Un peux à propos de moi</h2>
       <p>
