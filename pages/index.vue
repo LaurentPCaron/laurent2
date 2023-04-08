@@ -1,8 +1,8 @@
 <template>
   <div class="">
-    <OrganismHero />
+    <!-- <OrganismHero />
     <OrganismAbout />
-    <OrganismProjects />
+    <OrganismProjects /> -->
   </div>
 </template>
 <script setup></script>

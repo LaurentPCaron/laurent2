@@ -8,8 +8,8 @@
       :class="[{ 'bg-black/50 w-full h-screen': isOpen }, backgroundState]"
       @[isOpen&&`click`]="togglingMenu"
     ></div>
-    <nav
-      class="flex justify-center bg-dark fixed top-0 right-0 h-full w-3/4 transition-all duration-700"
+    <div
+      class="flex justify-end pr-10 bg-dark fixed top-0 right-0 h-screen w-3/4 transition-all duration-700"
       :class="isOpen ? 'translate-x-0' : 'translate-x-full'"
     >
       <ul class="text-right" :class="menuItemsState">
@@ -22,7 +22,7 @@
         <li><button>test</button></li>
         <li><button>test</button></li>
       </ul>
-    </nav>
+    </div>
   </div>
 </template>
 
