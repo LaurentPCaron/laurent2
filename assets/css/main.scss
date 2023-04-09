@@ -8,6 +8,9 @@
   font-family: 'W95FA';
   src: url('../fonts/W95FA.otf');
 }
+* {
+  @apply box-border;
+}
 
 html {
   @apply bg-mains text-lighter overflow-x-hidden font-retro;

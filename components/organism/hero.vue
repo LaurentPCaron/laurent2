@@ -1,17 +1,15 @@
 <template>
-  <div class="mt-16 flex flex-col gap-5">
-    <h1 class="text-shadow text-light">Laurent-Philippe Caron</h1>
+  <div class="flex flex-col justify-start gap-5">
+    <h1 class="text-shadow text-light pt-5">Laurent-Philippe Caron</h1>
     <p class="text-6xl">Dévelopeur front-end</p>
-    <p class="text-2xl">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis beatae
-      officia voluptatibus, eius expedita delectus.
-    </p>
 
-    <AtomSimpleButton>Télécharger CV</AtomSimpleButton>
+    <AtomSimpleButton class="self-center"
+      ><span class="text-lg">Télécharger CV</span></AtomSimpleButton
+    >
 
-    <button class="text-5xl flex flex-col items-center w-full">
+    <button class="text-2xl flex flex-col items-center mt-auto">
       <span>Scroll to start</span>
-      <span class="text-8xl rotate-90 up-and-down">></span>
+      <span class="text-3xl rotate-90 up-and-down text-light">></span>
     </button>
   </div>
 </template>
