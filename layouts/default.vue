@@ -3,10 +3,12 @@
   <OrganismHeader />
 
   <!--Side Menu-->
-  <OrganismSideMenu />
+  <OrganismSideMenu
+    class="fixed w-full max-w-[1850px] flex h-screen justify-end items-center"
+  />
 
   <!-- Contenue -->
-  <div class="md:w-10/12 max-w-7xl mx-auto">
+  <div class="md:w-10/12 max-w-7xl h-[2000px] mx-auto relative">
     <slot />
   </div>
 </template>
