@@ -1,16 +1,10 @@
 <template>
-  <ul class="mr-10">
-    <li>
-      <a href="#" class=""
-        ><font-awesome-icon
-          class="text-3xl flex justify-center items-center rounded-full border-2 border-[white] w-fit aspect-square bg-light p-1"
-          :icon="['fab', 'linkedin']"
-        />
-      </a>
-    </li>
-  </ul>
+  <div>
+    <MoleculeExternalLinks class="flex flex-col gap-5 mr-10" />
+  </div>
 </template>
 
 <script setup></script>
+Laurent-Philippe Caron lien 1 lien 2 lien 3 lien 4 lien 5
 
 <style lang="scss" scoped></style>

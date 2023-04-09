@@ -4,7 +4,7 @@
 
   <!--Side Menu-->
   <OrganismSideMenu
-    class="fixed w-full max-w-[1850px] flex h-screen justify-end items-center"
+    class="fixed w-full max-w-[1850px] hidden md:flex h-screen justify-end items-center"
   />
 
   <!-- Contenue -->

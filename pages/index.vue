@@ -1,7 +1,7 @@
 <template>
   <div class="">
-    <!-- <OrganismHero />
-    <OrganismAbout />
+    <OrganismHero />
+    <!--<OrganismAbout />
     <OrganismProjects /> -->
   </div>
 </template>

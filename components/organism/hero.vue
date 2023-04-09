@@ -1,18 +1,18 @@
 <template>
-  <div
-    class="pt-24 grid grid-rows-2 items-center justify-items-center font-retro"
-  >
-    <div class="border-4 text-light py-8 text-center w-10/12">
-      <h1 class="text-shadow">Laurent-Philippe Caron</h1>
-      <p class="self-end text-4xl mr-5">Dévelopeur front-end</p>
-    </div>
+  <div class="mt-16 flex flex-col gap-5">
+    <h1 class="text-shadow text-light">Laurent-Philippe Caron</h1>
+    <p class="text-6xl">Dévelopeur front-end</p>
+    <p class="text-2xl">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis beatae
+      officia voluptatibus, eius expedita delectus.
+    </p>
 
-    <div>
-      <button class="text-5xl flex flex-col">
-        <span>Scroll to start</span>
-        <span class="text-8xl rotate-90 up-and-down">></span>
-      </button>
-    </div>
+    <AtomSimpleButton>Télécharger CV</AtomSimpleButton>
+
+    <button class="text-5xl flex flex-col items-center w-full">
+      <span>Scroll to start</span>
+      <span class="text-8xl rotate-90 up-and-down">></span>
+    </button>
   </div>
 </template>
 
