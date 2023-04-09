@@ -1,6 +1,6 @@
 <template>
   <header class="bg-mains sticky h-14 w-full z-10 top-0 drop-shadow-xl">
-    <nav class="w-10/12 h-full max-w-7xl mx-auto flex items-center">
+    <nav class="h-full mx-auto flex items-center">
       <a href="">Laurent-Philippe Caron</a>
       <ul class="hidden md:flex justify-end gap-5 w-full">
         <li><a href="#">lien 1</a></li>

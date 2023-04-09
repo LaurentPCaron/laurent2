@@ -1,13 +1,13 @@
 <template>
-  <div class="flex flex-col justify-start gap-5">
+  <div class="flex flex-col justify-start items-center gap-5">
     <h1 class="text-shadow text-light pt-5">Laurent-Philippe Caron</h1>
     <p class="text-6xl">Dévelopeur front-end</p>
 
-    <AtomSimpleButton class="self-center"
+    <AtomSimpleButton class="self-center mt-16"
       ><span class="text-lg">Télécharger CV</span></AtomSimpleButton
     >
 
-    <button class="text-2xl flex flex-col items-center mt-auto">
+    <button class="text-2xl flex flex-col items-center mt-20">
       <span>Scroll to start</span>
       <span class="text-3xl rotate-90 up-and-down text-light">></span>
     </button>
