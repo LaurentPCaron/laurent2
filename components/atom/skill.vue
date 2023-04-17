@@ -1,12 +1,12 @@
 <template>
-  <div class="flex flex-col items-center">
-    <i>
+  <div class="grid grid-rows-[3.5rem_1rem] items-start gap-y-5">
+    <i class="w-16 aspect-square flex flex-col justify-center">
       <font-awesome-icon v-if="faIcon" class="icon text-5xl" :icon="faIcon" />
       <img
         v-if="icon"
+        class="w-full max-w-[64px]"
         :src="`_nuxt/${icon}`"
         alt=""
-        class="w-16 aspect-square"
       />
     </i>
     <p>{{ label }}</p>

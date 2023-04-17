@@ -23,5 +23,6 @@ const props = defineProps({
   justify-items: center;
   align-items: center;
   gap: 2rem;
+  row-gap: 3.5rem;
 }
 </style>
