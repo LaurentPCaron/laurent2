@@ -9,7 +9,7 @@
         alt=""
       />
     </i>
-    <p>{{ label }}</p>
+    <p class="text-center">{{ label }}</p>
   </div>
 </template>
 
