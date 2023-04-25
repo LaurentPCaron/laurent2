@@ -1,0 +1,16 @@
+.up-and-down {
+  animation: up-and-down;
+  animation-duration: 350ms;
+  translate: 0;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes up-and-down {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: 0 10px;
+  }
+}
