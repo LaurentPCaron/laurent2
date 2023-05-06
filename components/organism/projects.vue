@@ -1,7 +1,9 @@
 <template>
-  <h2>Projets</h2>
-  <div class="flex flex-wrap gap-[1px] bg-lighter border border-lighter">
-    <MoleculeProject v-for="x in 6" />
+  <div>
+    <h2>Projets</h2>
+    <div class="flex flex-wrap gap-[1px] bg-lighter border border-lighter">
+      <MoleculeProject v-for="x in 6" />
+    </div>
   </div>
 </template>
 
