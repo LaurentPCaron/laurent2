@@ -1,9 +1,10 @@
 <template>
   <div>
     <h2>Contactez-moi</h2>
-    <form>
-      <label for="name">Nom</label>
-      <input type="text" name="neme" />
+    <form class="">
+      <AtomTextInput type="basic" label="Nom complet" id="name" />
+      <AtomTextInput type="email" label="Couriel" id="email" />
+      <AtomTextInput type="area" label="Mesaage" id="content" />
     </form>
     <!-- <vue-recaptcha
         theme="light"
@@ -15,19 +16,24 @@
 </template>
 
 <script setup>
-import emailjs from "emailjs-com";
-import { VueRecaptcha } from "vue3-recaptcha-v2";
+import emailjs from 'emailjs-com';
+import { VueRecaptcha } from 'vue3-recaptcha-v2';
 
-const name = ref("");
-const email = ref("");
-const message = ref("");
+const name = ref('');
+const email = ref('');
+const message = ref('');
 
-const callbackVerify = (e) => {
+const callbackVerify = e => {
   console.log(e);
 };
 
-const sendEMail = (e) => {
-  emailjs.sendForm("service_j78itff", "template_ixguscf", e.target, "e1g13XosLwEXdsVRE");
+const sendEMail = e => {
+  emailjs.sendForm(
+    'service_j78itff',
+    'template_ixguscf',
+    e.target,
+    'e1g13XosLwEXdsVRE'
+  );
 };
 </script>
 
