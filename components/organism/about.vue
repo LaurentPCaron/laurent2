@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-5 md:flex-row px-5 py-2">
+  <div class="flex flex-col gap-5 md:flex-row py-2">
     <h2>Un peux à propos de moi</h2>
     <AtomCircleImage class="w-60 self-center" />
     <p>
