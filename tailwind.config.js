@@ -3,7 +3,7 @@ module.exports = {
     colors: {
       mains: '#000000',
       dark: '#3C2A21',
-      light: '#D5CEA3',
+      light: '#CB8C67',
       lighter: '#fff',
       inherit: 'inherit',
       boxbg: '#0000af',
