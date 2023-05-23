@@ -16,11 +16,29 @@ html {
   @apply bg-mains text-lighter overflow-x-hidden font-retro;
 }
 
+body {
+  counter-reset: h2;
+}
+
 h1 {
-  @apply text-7xl md:text-6xl lg:text-9xl font-bold mb-5;
+  @apply text-8xl font-bold mb-5;
 }
 h2 {
-  @apply text-3xl md:text-4xl lg:text-6xl font-bold mb-5;
+  @apply flex text-3xl font-bold mb-5 items-center whitespace-nowrap lg:ml-5;
+  &::before {
+    counter-increment: h2;
+    content: counter(h2) '.';
+    margin-right: 1rem;
+    color: #cb8c67;
+  }
+  &::after {
+    content: '';
+    margin-left: 1rem;
+    width: 100%;
+    max-width: 300px;
+    height: 1px;
+    background-color: #555555;
+  }
 }
 h3 {
   @apply text-xl md:text-2xl lg:text-4xl font-bold mb-3;

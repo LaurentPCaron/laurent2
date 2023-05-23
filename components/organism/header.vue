@@ -1,5 +1,7 @@
 <template>
-  <header class="bg-mains sticky h-14 w-full z-10 top-0 drop-shadow-xl">
+  <header
+    class="bg-mains bg-opacity-75 sticky h-14 w-full z-10 top-0 drop-shadow-xl px-8"
+  >
     <nav class="h-full mx-auto flex items-center">
       <a href="">Laurent-Philippe Caron</a>
       <ul class="hidden md:flex justify-end gap-5 w-full">
@@ -16,3 +18,9 @@
     </nav>
   </header>
 </template>
+
+<style lang="scss" scoped>
+header {
+  box-shadow: 0 0px 15px 10px #000;
+}
+</style>
