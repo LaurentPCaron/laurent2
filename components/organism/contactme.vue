@@ -1,55 +1,17 @@
 <template>
   <div>
-    <h2>Contactez-moi</h2>
-    <form class="flex flex-col gap-8 lg:w-1/2 mx-auto">
-      <AtomTextInput
-        type="basic"
-        label="Nom complet"
-        id="name"
-        place-holder="Écrivez votre nom"
-      />
-      <AtomTextInput
-        type="email"
-        label="Courriel"
-        id="email"
-        place-holder="Écrivez votre adresse courriel"
-      />
-      <AtomTextInput
-        type="area"
-        label="Message"
-        id="content"
-        place-holder="Écrivez votre sympathique message. De préférence, par rapport à un potentiel emploie, mais j'accepte aussi des recettes asiatique."
-      />
-    </form>
-    <!-- <vue-recaptcha
-        theme="light"
-        size="normal"
-        :tabindex="0"
-        @verify="callbackVerify($event)"
-      /> -->
+    <h2>Me contacter</h2>
+    <div class="lg:w-1/2 mx-auto">
+      <p class="text-7xl text-center"><strong>Dites-moi bonjours!</strong></p>
+      <p>
+        Ma boîtes de couriel est toujours ouverte. Donc, n'hésitez pas à me
+        contacter que ce soit de nouvelle opportunité de carrière ou simplement
+        me dire allo. Je ferez mon possible pour vous répondre dans les bref
+        délais.
+      </p>
+      <AtomSimpleButton class="mx-auto mt-14 mb-40"
+        >Me dire allo!</AtomSimpleButton
+      >
+    </div>
   </div>
 </template>
-
-<script setup>
-import emailjs from 'emailjs-com';
-import { VueRecaptcha } from 'vue3-recaptcha-v2';
-
-const name = ref('');
-const email = ref('');
-const message = ref('');
-
-const callbackVerify = e => {
-  console.log(e);
-};
-
-const sendEMail = e => {
-  emailjs.sendForm(
-    'service_j78itff',
-    'template_ixguscf',
-    e.target,
-    'e1g13XosLwEXdsVRE'
-  );
-};
-</script>
-
-<style scoped></style>

@@ -1,14 +1,18 @@
 <template>
-  <!-- Header -->
-  <OrganismHeader />
+  <div
+    class="overflow-y-scroll overflow-x-hidden h-screen lg:snap-y lg:snap-mandatory"
+  >
+    <!-- Header -->
+    <OrganismHeader />
 
-  <!--Side Menu-->
-  <!-- <OrganismSideMenu
+    <!--Side Menu-->
+    <!-- <OrganismSideMenu
     class="fixed w-full hidden md:flex h-screen justify-end items-center"
   /> -->
 
-  <!-- Contenue -->
-  <div class="relative">
-    <slot />
+    <!-- Contenue -->
+    <div>
+      <slot />
+    </div>
   </div>
 </template>
