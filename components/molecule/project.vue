@@ -10,10 +10,8 @@
   </button>
 
   <!--modal-->
-  <dialog class="absolute w-1/2" ref="modal" @click.self="closeModal">
-    <p>
-      {{ props.content }}
-    </p>
+  <dialog class="absolute w-1/2 h-72" ref="modal" @click.self="closeModal">
+    <p>{{ props.content }}</p>
   </dialog>
 </template>
 
