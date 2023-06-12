@@ -1,8 +1,8 @@
 <template>
   <div>
     <h2 class="ml-5">Projets</h2>
-    <div class="flex flex-wrap gap-[1px] bg-lighter border border-lighter">
-      <MoleculeProject v-for="x in 3" :content="`boite${x}`" />
+    <div class="mx-auto w-11/12 lg:w-1/2 max-w-4xl">
+      <MoleculeProject class="mb-16 last:mb-0" v-for="x in 3" :index="x" />
     </div>
   </div>
 </template>
