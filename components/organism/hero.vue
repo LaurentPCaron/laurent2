@@ -5,7 +5,7 @@
       class="grid grid-rows-[60%_38%_2%] lg:grid-rows-[49%_49%_2%] h-screen lg:absolute"
     >
       <div class="self-end">
-        <AtomIcons icon="nuxt" />
+        <AtomIcons icon="sass" />
         <p class="m-0">Hello! Je m'appelle</p>
         <h1 class="text-shadow text-light pt-5">Laurent-Philippe Caron</h1>
         <p class="text-4xl">Et je suis dévelopeur front-end</p>
@@ -37,7 +37,8 @@ export default {};
 }
 .border {
   background-color: rgba(78, 42, 51);
-  box-shadow: 0px 0px 0px 2px #4e2a33, 0px 0px 0px 4px #fff, 5px 5px 5px 5px #000;
+  box-shadow: 0px 0px 0px 2px #4e2a33, 0px 0px 0px 4px #fff,
+    5px 5px 5px 5px #000;
   border-radius: 10px;
   border: solid rgba(142, 120, 104, 0.5) 1px;
 }
