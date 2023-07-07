@@ -19,16 +19,11 @@
         modi qui?
       </p>
       <div class="flex">
-        <AtomSkill
-          v-for="x in 3"
-          class=""
-          label="test"
-          fa-icon="fa-brands fa-github"
-        ></AtomSkill>
+        <AtomIcons class="w-14" icon="tw" v-for="x in 3" />
       </div>
       <div class="flex justify-around">
-        <AtomSimpleButton class="!w-1/3">Voir en ligne</AtomSimpleButton>
-        <AtomSimpleButton class="!w-1/3">Lire le code</AtomSimpleButton>
+        <AtomSimpleButton class="w-1/3">Voir en ligne</AtomSimpleButton>
+        <AtomSimpleButton class="w-1/3">Lire le code</AtomSimpleButton>
       </div>
     </div>
   </div>
