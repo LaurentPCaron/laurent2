@@ -1,35 +1,41 @@
 <template>
-  <img v-if="getTypeOfIcon() === 'url'" :src="icon?.icon" alt="" />
-  <font-awesome-icon
-    v-else-if="getTypeOfIcon() === 'fa'"
-    :icon="icon?.faIcon"
-  />
-  <p v-else>Erreur icon</p>
+  <div>
+    <img
+      class="h-full"
+      v-if="getTypeOfIcon() === 'url'"
+      :src="icon?.icon"
+      alt=""
+    />
+    <font-awesome-icon
+      v-else-if="getTypeOfIcon() === 'fa'"
+      :icon="icon?.faIcon"
+    />
+    <p v-else>Erreur icon</p>
+    <p v-if="!noLabel">{{ icon?.label }}</p>
+  </div>
 </template>
 
 <script setup lang="ts">
 import skills from '@/assets/data/skill.json';
-import { icon } from '@/types/Iicon';
+import { typeIcon } from '@/types/IIcon';
 
-const props = defineProps<{ icon: icon }>();
+export interface Props {
+  icon: typeIcon;
+  noLabel?: boolean;
+}
 
-const getTypeOfIcon = (): 'url' | 'fa' | null => {
+const props = withDefaults(defineProps<Props>(), {
+  noLabel: false,
+});
+
+const getTypeOfIcon = (): 'url' | 'fa' => {
   switch (props.icon) {
-    case 'sass':
-    case 'bs':
-    case 'git':
-    case 'html':
-    case 'css':
-    case 'js':
-    case 'vue':
-      return 'fa';
     case 'nuxt':
     case 'tw':
     case 'vscode':
       return 'url';
-
     default:
-      return null;
+      return 'fa';
   }
 };
 

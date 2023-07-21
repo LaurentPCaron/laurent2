@@ -12,27 +12,32 @@
       </div>
     </div>
     <div class="flex flex-col" :class="index % 2 === 0 ? '-order-1' : ''">
-      <h3>Titre du projet</h3>
+      <h3>{{ info.title }}</h3>
       <p>
-        Description du projet Lorem ipsum dolor, sit amet consectetur
-        adipisicing elit. Vitae laboriosam ab expedita maxime error tenetur quas
-        modi qui?
+        {{ info.description }}
       </p>
-      <div class="flex">
-        <AtomIcons class="w-14" icon="tw" v-for="x in 3" />
+      <div class="flex gap-5">
+        <AtomIcons class="w-14" :icon="icon" v-for="icon in info.icons" />
       </div>
       <div class="flex justify-around mt-16">
-        <AtomSimpleButton class="w-5/12 h-10"
-          >Voir en ligne<AtomIcons icon=""
+        <AtomSimpleButton class="w-5/12 h-10 flex justify-center gap-3"
+          >Voir en ligne <AtomIcons class="h-5" icon="eye" no-label
         /></AtomSimpleButton>
-        <AtomSimpleButton class="w-5/12 h-10">Lire le code</AtomSimpleButton>
+        <AtomSimpleButton class="w-5/12 h-10 flex justify-center gap-3"
+          >Lire le code <AtomIcons class="h-10" icon="git" no-label
+        /></AtomSimpleButton>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-defineProps<{ index: number }>();
+import { ISkill } from 'types/ISkill';
+
+defineProps<{
+  index: number;
+  info: ISkill;
+}>();
 </script>
 
 <style lang="scss" scoped></style>

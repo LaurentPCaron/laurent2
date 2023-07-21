@@ -1,4 +1,4 @@
-export type icon =
+export type typeIcon =
   | 'nuxt'
   | 'tw'
   | 'vscode'
@@ -8,4 +8,5 @@ export type icon =
   | 'vue'
   | 'sass'
   | 'bs'
-  | 'git';
+  | 'git'
+  | 'eye';

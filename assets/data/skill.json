@@ -8,5 +8,6 @@
   { "code": "tw", "icon": "img/icons/tailwind.svg", "label": "Tailwind" },
   { "code": "bs", "faIcon": "fa-brands fa-bootstrap", "label": "Bootstrap" },
   { "code": "git", "faIcon": "fa-brands fa-github", "label": "Git" },
-  { "code": "vscode", "icon": "img/icons/vscode.svg", "label": "VS Code" }
+  { "code": "vscode", "icon": "img/icons/vscode.svg", "label": "VS Code" },
+  { "code": "eye", "faIcon": "fa-solid fa-eye", "label": "Oeil" }
 ]

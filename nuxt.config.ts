@@ -15,4 +15,9 @@ export default defineNuxtConfig({
       '@fortawesome/free-brands-svg-icons',
     ],
   },
+  postcss: {
+    plugins: {
+      'postcss-custom-properties': false,
+    },
+  },
 });
