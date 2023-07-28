@@ -17,7 +17,7 @@
         {{ info.description }}
       </p>
       <div class="flex gap-5">
-        <AtomIcons class="w-14" :icon="icon" v-for="icon in info.icons" />
+        <AtomIcons class="h-10 aspect-square" :icon="icon" v-for="icon in info.icons" />
       </div>
       <div class="flex justify-around mt-16">
         <AtomSimpleButton class="w-5/12 h-10 flex justify-center gap-3"
@@ -32,7 +32,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ISkill } from 'types/ISkill';
+import { ISkill } from "types/ISkill";
 
 defineProps<{
   index: number;
