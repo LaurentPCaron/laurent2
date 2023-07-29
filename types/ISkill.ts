@@ -6,4 +6,5 @@ export interface ISkill {
   icons: typeIcon[];
   urlSite?: String;
   urlCode?: String;
+  imgUrl: string;
 }

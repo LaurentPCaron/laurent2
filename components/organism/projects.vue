@@ -18,16 +18,20 @@ import { ISkill } from 'types/ISkill';
 const phData: ISkill[] = [
   {
     title: 'test1',
-    description: 'Description 1',
+    description:
+      'Pokem ipsum dolor sit amet Helix Fossil Heatran Bonsly Croagunk Porygon Onix. Sonic Boom Pinsir Hoenn Thundurus Teddiursa Houndoom Yellow. Anim id est laborum Venusaur Mystery Gift Cubchoo Zebstrika Volbeat ut enim ad minim veniam. Splash Darkrai Staravia Mamoswine Escape Rope Ursaring Gallade.  ',
     icons: ['bs', 'tw', 'html'],
     urlSite: 'google.com',
     urlCode: 'github.com',
+    imgUrl: '/img/site1.jpg',
   },
   {
     title: 'test2',
-    description: 'Description 2',
+    description:
+      'Mineral Badge Raichu Sinnoh Rotom Finneon Aron Garchomp. Glitch City Lillipup Wurmple Torchic Rufflet Porygon2 Gliscor. Harden Pidgeot Darkrai Froslass Victreebel Joltik Kakuna. Fuchsia City Lumineon Frillish Spinda gotta catch ',
     icons: ['js', 'sass', 'vscode'],
     urlSite: 'google.com',
+    imgUrl: '/img/site2.jpg',
   },
 ];
 </script>
