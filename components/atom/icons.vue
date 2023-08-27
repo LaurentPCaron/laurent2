@@ -1,12 +1,14 @@
 <template>
-  <figure v-if="icon.icon || icon.faIcon" :class="showCaption ? 'icon' : ''">
-    <img class="h-full" v-if="icon.icon" :src="icon?.icon" alt="" />
+  <figure v-if="icon.icon || icon.faIcon" :class="showCaption ? 'icon ' : ''">
+    <img class="h-full mx-auto" v-if="icon.icon" :src="icon?.icon" alt="" />
     <font-awesome-icon
-      class="h-full"
+      class="h-full mx-auto"
       v-else-if="icon.faIcon"
       :icon="icon?.faIcon"
     />
-    <figcaption v-if="showCaption && icon.label">{{ icon.label }}</figcaption>
+    <figcaption v-if="showCaption && icon.label" class="text-center">
+      {{ icon.label }}
+    </figcaption>
   </figure>
 
   <p v-else>Erreur icon</p>

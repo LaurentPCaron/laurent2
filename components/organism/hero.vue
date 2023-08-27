@@ -1,8 +1,8 @@
 <template>
   <div class="sliding-container">
-    <div class="sliding-bg absolute h-screen left-0 -z-10"></div>
+    <div class="sliding-bg bg-fixed absolute h-screen left-0 top-0 -z-10"></div>
     <div
-      class="grid grid-rows-[60%_38%_2%] lg:grid-rows-[49%_49%_2%] h-screen lg:absolute"
+      class="grid grid-rows-[60%_38%_2%] lg:grid-rows-[49%_49%_1%] h-screen lg:absolute top-0"
     >
       <div class="self-end">
         <p class="m-0">Hello! Je m'appelle</p>

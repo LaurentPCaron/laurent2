@@ -1,6 +1,6 @@
 <template>
-  <div class="contain relative">
-    <OrganismHero class="w-11/12 lg:w-1/2 mx-auto" />
+  <div class="contain">
+    <OrganismHero class="w-11/12 lg:w-1/2 mx-auto min-h-screen" />
     <OrganismProjects />
 
     <OrganismAbout class="mx-5 lg:mx-0" />
@@ -12,10 +12,7 @@
 .contain {
   & > * {
     scroll-snap-align: start;
-    @apply lg:min-h-screen;
-  }
-  & > *:not(:first-child) {
-    @apply lg:pt-20;
+    @apply py-14 min-h-[100vh];
   }
 }
 </style>

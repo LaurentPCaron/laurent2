@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="overflow-y-scroll overflow-x-hidden h-screen lg:snap-y lg:snap-mandatory"
-  >
+  <div class="overflow-x-hidden">
     <!-- Header -->
     <OrganismHeader />
 
