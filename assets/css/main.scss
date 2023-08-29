@@ -14,6 +14,7 @@
 
 html {
   @apply bg-mains text-lighter overflow-x-hidden font-retro;
+  counter-reset: h2;
   //overflow-y: hidden;
 }
 
