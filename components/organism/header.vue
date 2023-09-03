@@ -1,6 +1,6 @@
 <template>
   <header
-    class="bg-mains bg-opacity-75 sticky h-14 w-full z-10 top-0 drop-shadow-xl px-8"
+    class="bg-mains bg-opacity-75 fixed h-14 w-full z-10 top-0 drop-shadow-xl px-8"
   >
     <nav class="h-full mx-auto flex items-center">
       <a href="">Laurent-Philippe Caron</a>

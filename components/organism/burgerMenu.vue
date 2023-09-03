@@ -9,21 +9,20 @@
       @[isOpen&&`click`]="togglingMenu"
     ></div>
     <div
-      class="flex justify-end pr-10 bg-dark fixed top-0 right-0 h-screen w-3/4 transition-all duration-700"
+      class="flex justify-end pr-10 bg-dark opacity-90 fixed top-0 right-0 h-screen w-full transition-all duration-700"
       :class="isOpen ? 'translate-x-0' : 'translate-x-full'"
     >
       <div class="w-full flex flex-col justify-between">
         <ul class="text-right" :class="menuItemsState">
-          <li class="mb-10">
+          <li class="mt-10">
             <button @click="togglingMenu">
               <font-awesome-icon icon="fa-solid fa-xmark" />
             </button>
           </li>
-          <li><button>test</button></li>
-          <li><button>test</button></li>
-          <li><button>test</button></li>
+          <li class="border-y border-lighter text-left w-screen py-5">Test</li>
+          <li class="border-b border-lighter text-left w-screen py-5">Test</li>
+          <li class="border-b border-lighter text-left w-screen py-5">Test</li>
         </ul>
-        <MoleculeExternalLinks class="flex justify-end w-full gap-5 pb-7" />
       </div>
     </div>
   </div>
