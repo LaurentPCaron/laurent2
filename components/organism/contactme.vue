@@ -1,17 +1,26 @@
 <template>
-  <div class="min-h-[20vh]">
+  <div>
     <h2>Me contacter</h2>
-    <ul class="flex gap-12 lg:w-1/2 mx-auto text-2xl">
-      <li><a class="link--hover" href="">Couriel</a></li>
-      <li><a class="link--hover" href="">LinkedIn</a></li>
-      <li><a class="link--hover" href="">Github</a></li>
-      <li><a class="link--hover" href="">C.V.</a></li>
+    <div class="my-16 mx-auto lg:w-1/2 text-center">
+      <p class="text-8xl mb-5">Me dire allo</p>
+      <a class="text-6xl underline-effect" href="mailto:info@lpcaron.ninja"
+        >info@lpcaron.ninja</a
+      >
+    </div>
+    <ul class="mx-auto text-5xl grid lg:grid-cols-3 items-center">
+      <li class="hover-effect"><a href="">LinkedIn</a></li>
+      <li class="hover-effect"><a href="">Github</a></li>
+      <li class="hover-effect"><a href="">C.V.</a></li>
     </ul>
   </div>
 </template>
 
 <style lang="scss" scoped>
-a {
-  @apply py-2 px-6 w-full text-center;
+li {
+  @apply w-full h-48 border border-b-mains;
+
+  a {
+    @apply w-full h-full flex items-center justify-center;
+  }
 }
 </style>

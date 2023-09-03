@@ -6,7 +6,7 @@ module.exports = {
       light: '#CB8C67',
       lighter: '#fff',
       inherit: 'inherit',
-      boxbg: '#0000af',
+      link: '#0000af',
       transparent: 'transparent',
     },
     extend: {

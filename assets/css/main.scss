@@ -45,6 +45,10 @@ p {
   @apply text-xl mb-1;
 }
 
+a[href^='mailto:'] {
+  color: #0b5cba;
+}
+
 i {
   font-style: normal;
 }

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grid grid-rows-[10%_90%] gap-5 md:flex-row py-2 bg-[url('/img/about-bg.jpg')] bg-fixed"
+    class="grid grid-rows-[10%_90%] gap-5 md:flex-row bg-[url('/img/about-bg.jpg')] bg-fixed"
   >
     <h2 class="self-start">Un peux à propos de moi</h2>
     <div class="bg-mains bg-opacity-30 h-fit py-10">
