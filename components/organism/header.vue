@@ -19,6 +19,10 @@
   </header>
 </template>
 
+<script lang="ts" setup>
+const links: { a: String; label: String }[] = [{ a: '#', label: 'Accueil' }];
+</script>
+
 <style lang="scss" scoped>
 header {
   box-shadow: 0 0px 15px 10px #000;
