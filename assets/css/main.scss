@@ -15,7 +15,7 @@
 html {
   @apply bg-mains text-lighter overflow-x-hidden font-retro;
   counter-reset: h2;
-  //overflow-y: hidden;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -84,9 +84,9 @@ i {
 }
 
 //box
-.bg-ff {
+/* .bg-ff {
   @apply bg-gradient-to-br from-boxbg to-mains;
-}
+} */
 
 //Composante
 .button {

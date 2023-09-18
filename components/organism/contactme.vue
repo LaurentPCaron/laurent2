@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Me contacter</h2>
+    <h2 id="contact">Me contacter</h2>
     <div class="my-16 mx-auto lg:w-1/2 text-center">
       <p class="text-8xl mb-5">Me dire allo</p>
       <a class="text-6xl underline-effect" href="mailto:info@lpcaron.ninja"

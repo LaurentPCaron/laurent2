@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="ml-5">Projets</h2>
+    <h2 id="projects" class="ml-5">Projets</h2>
     <div class="mx-auto w-11/12 lg:w-1/2 max-w-4xl">
       <MoleculeProject
         class="mb-16 last:mb-0"

@@ -19,9 +19,13 @@
               <font-awesome-icon icon="fa-solid fa-xmark" />
             </button>
           </li>
-          <li class="border-y border-lighter text-left w-screen py-5">Test</li>
-          <li class="border-b border-lighter text-left w-screen py-5">Test</li>
-          <li class="border-b border-lighter text-left w-screen py-5">Test</li>
+          <li
+            v-for="{ href, label } in links"
+            :key="href"
+            class="border-y border-lighter text-left w-screen py-5"
+          >
+            <a :href="href" @click="togglingMenu">{{ label }}</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -37,6 +41,7 @@ export default {
       backgroundState: '-z-10',
     };
   },
+  props: ['links'],
   watch: {
     isOpen(isOpen) {
       if (!isOpen) {

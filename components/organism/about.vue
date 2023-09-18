@@ -2,7 +2,7 @@
   <div
     class="grid grid-rows-[10%_90%] gap-5 md:flex-row bg-[url('/img/about-bg.jpg')] bg-fixed"
   >
-    <h2 class="self-start">Un peux à propos de moi</h2>
+    <h2 id="aboutme" class="self-start">Un peux à propos de moi</h2>
     <div class="bg-mains bg-opacity-30 h-fit py-10">
       <div class="lg:w-1/2 mx-auto self-start">
         <div class="mb-10 lg:flex items-center">
