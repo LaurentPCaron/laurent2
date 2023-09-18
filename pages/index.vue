@@ -7,4 +7,5 @@
     <OrganismContactme class="mt-5 lg:mx-0 pt-5" />
   </div>
 </template>
+
 <script setup></script>

@@ -9,12 +9,12 @@
       @[isOpen&&`click`]="togglingMenu"
     ></div>
     <div
-      class="flex justify-end pr-10 bg-dark opacity-90 fixed top-0 right-0 h-screen w-full transition-all duration-700"
+      class="flex justify-end pr-10 bg-dark fixed top-0 right-0 h-screen w-full transition-all duration-700"
       :class="isOpen ? 'translate-x-0' : 'translate-x-full'"
     >
       <div class="w-full flex flex-col justify-between">
         <ul class="text-right" :class="menuItemsState">
-          <li class="mt-10">
+          <li class="mb-6 mt-4">
             <button @click="togglingMenu">
               <font-awesome-icon icon="fa-solid fa-xmark" />
             </button>
@@ -65,6 +65,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+a {
+  @apply w-screen h-full  pl-5 flex items-center;
+}
 li {
   @apply text-4xl;
 }
