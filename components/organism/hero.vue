@@ -14,7 +14,10 @@
         ><span class="">Télécharger CV</span></AtomSimpleButton
       >
 
-      <a class="flex flex-col items-center self-end cursor-pointer">
+      <a
+        class="flex flex-col items-center self-end cursor-pointer"
+        href="#projects"
+      >
         <span class="button border w-72 py-1 text-3xl">Scroll to start</span>
         <span class="text-6xl rotate-90 up-and-down text-lighter">></span>
       </a>

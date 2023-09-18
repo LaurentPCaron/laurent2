@@ -1,9 +1,10 @@
 <template>
   <div>
-    <h2 id="contact">Me contacter</h2>
+    <h2>Me contacter</h2>
+    <div id="contact" class="anchor" />
     <div class="my-16 mx-auto lg:w-1/2 text-center">
-      <p class="text-8xl mb-5">Me dire allo</p>
-      <a class="text-6xl underline-effect" href="mailto:info@lpcaron.ninja"
+      <p class="text-6xl mb-5">Me dire allo</p>
+      <a class="text-4xl underline-effect" href="mailto:info@lpcaron.ninja"
         >info@lpcaron.ninja</a
       >
     </div>
@@ -17,7 +18,7 @@
 
 <style lang="scss" scoped>
 li {
-  @apply w-full h-48 border border-b-mains;
+  @apply w-full h-32 border border-b-mains;
 
   a {
     @apply w-full h-full flex items-center justify-center;
