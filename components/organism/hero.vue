@@ -1,9 +1,9 @@
 <template>
   <div class="sliding-container w-screen">
-    <div class="sliding-bg bg-fixed h-screen min-h-[915px] -z-10" />
+    <div class="sliding-bg bg-fixed h-screen min-h-[915px] w-screen -z-10" />
 
     <div
-      class="grid grid-rows-[60%_38%_2%] lg:grid-rows-[49%_49%_1%] min-h-[915px] h-screen absolute left-0 top-0"
+      class="grid grid-rows-[60%_38%_2%] lg:grid-rows-[49%_49%_1%] min-h-[915px] h-screen w-screen absolute left-0 top-0 justify-center"
     >
       <div class="self-end">
         <p class="m-0">Hello! Je m'appelle</p>

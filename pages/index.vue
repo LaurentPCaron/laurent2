@@ -1,6 +1,6 @@
 <template>
   <div class="contain">
-    <OrganismHero class="w-11/12 lg:w-1/2 mx-auto min-h-screen" />
+    <OrganismHero class="" />
     <OrganismProjects class="py-5" />
 
     <OrganismAbout class="mx-5 lg:mx-0 py-5" />
