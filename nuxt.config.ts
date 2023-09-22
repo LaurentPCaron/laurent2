@@ -20,4 +20,5 @@ export default defineNuxtConfig({
       'postcss-custom-properties': false,
     },
   },
+  ssr: false,
 });

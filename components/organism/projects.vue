@@ -24,7 +24,7 @@ const phData: ISkill[] = [
     icons: ['bs', 'tw', 'html'],
     urlSite: 'google.com',
     urlCode: 'github.com',
-    imgUrl: '/img/site1.jpg',
+    imgUrl: 'img/site1.jpg',
   },
   {
     title: 'test2',
@@ -32,7 +32,7 @@ const phData: ISkill[] = [
       'Mineral Badge Raichu Sinnoh Rotom Finneon Aron Garchomp. Glitch City Lillipup Wurmple Torchic Rufflet Porygon2 Gliscor. Harden Pidgeot Darkrai Froslass Victreebel Joltik Kakuna. Fuchsia City Lumineon Frillish Spinda gotta catch ',
     icons: ['js', 'sass', 'vscode'],
     urlSite: 'google.com',
-    imgUrl: '/img/site2.jpg',
+    imgUrl: 'img/site2.jpg',
   },
 ];
 </script>
