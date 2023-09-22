@@ -78,7 +78,7 @@ i {
 .sliding {
   &-bg {
     width: 5760px;
-    background: url('img/hero-bg.png') repeat-x;
+    background: url('/img/hero-bg.png') repeat-x;
     animation: slide-bg 60s linear infinite;
   }
 }
