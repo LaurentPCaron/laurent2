@@ -3,7 +3,7 @@
     <OrganismHero class="" />
     <OrganismProjects class="py-5" />
 
-    <OrganismAbout class="mx-5 lg:mx-0 py-5" />
+    <OrganismAbout class="py-5" />
     <OrganismContactme class="mt-5 lg:mx-0 pt-5" />
   </div>
 </template>
