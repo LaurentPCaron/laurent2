@@ -76,6 +76,9 @@ i {
 }
 
 .sliding {
+  &-container {
+    overflow: hidden;
+  }
   &-bg {
     width: 5760px;
     background: url('/img/hero-bg.png') repeat-x;
