@@ -2,9 +2,9 @@ import { typeIcon } from './IIcon';
 
 export interface ISkill {
   title: String;
-  description: String;
+  description: string[];
   icons: typeIcon[];
-  urlSite?: String;
-  urlCode?: String;
+  urlSite?: string;
+  urlCode?: string;
   imgUrl: string;
 }

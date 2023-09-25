@@ -9,4 +9,5 @@ export type typeIcon =
   | 'sass'
   | 'bs'
   | 'git'
-  | 'eye';
+  | 'eye'
+  | 'aws';

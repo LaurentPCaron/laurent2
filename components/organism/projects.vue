@@ -18,21 +18,43 @@ import { ISkill } from 'types/ISkill';
 
 const phData: ISkill[] = [
   {
-    title: 'test1',
-    description:
-      'Pokem ipsum dolor sit amet Helix Fossil Heatran Bonsly Croagunk Porygon Onix. Sonic Boom Pinsir Hoenn Thundurus Teddiursa Houndoom Yellow. Anim id est laborum Venusaur Mystery Gift Cubchoo Zebstrika Volbeat ut enim ad minim veniam. Splash Darkrai Staravia Mamoswine Escape Rope Ursaring Gallade.  ',
-    icons: ['bs', 'tw', 'html'],
+    title: 'Une école équité et équitable',
+    description: [
+      "Une école équité et équitable est un site Conçu pour appuyer les professionnels en éducation de l'Ontario, le Continuum en matière d'équité et d'éducation inclusive vise à engager une réflexion et un dialogue sur les principes d'équité, d'inclusion et des droits de la personne.",
+      ' Conçu et designer par le centre franco en 2023. J’ai été responsable de développer et modifier le site-web suivant les maquettes conçu par le web-designer.',
+    ],
+    icons: ['html', 'css', 'js', 'vue', 'nuxt', 'tw', 'sass'],
     urlSite: 'google.com',
     urlCode: 'github.com',
     imgUrl: 'img/site1.jpg',
   },
   {
-    title: 'test2',
-    description:
-      'Mineral Badge Raichu Sinnoh Rotom Finneon Aron Garchomp. Glitch City Lillipup Wurmple Torchic Rufflet Porygon2 Gliscor. Harden Pidgeot Darkrai Froslass Victreebel Joltik Kakuna. Fuchsia City Lumineon Frillish Spinda gotta catch ',
-    icons: ['js', 'sass', 'vscode'],
+    title: 'Science innovante',
+    description: [
+      'Cours en ligne sur différent sujet scientifique pour la 7ᵉ et 8ᵉ année de l’Ontario. Le cours est conçu pour simuler un road-trip autour de l’Ontario ou l’élève visite différentes villes et apprend sur différents sujets en utilisant différents médias audio-visuels.',
+      'Mon rôle était de développer le site en suivant les maquettes conçu par le web-designer.',
+    ],
+    icons: ['html', 'css', 'js', 'sass'],
     urlSite: 'google.com',
     imgUrl: 'img/site2.jpg',
+  },
+  {
+    title: 'Dictionnaire visuel de langage des signes',
+    description: [
+      'Cours en ligne sur différent sujet scientifique pour la 7ᵉ et 8ᵉ année de l’Ontario. Le cours est conçu pour simuler un road-trip autour de l’Ontario ou l’élève visite différentes villes et apprend sur différents sujets en utilisant différents médias audio-visuels. ',
+      'Mon rôle était de développer le site en suivant les maquettes conçu par le web-designer.',
+    ],
+    icons: ['html', 'css', 'js', 'nuxt', 'sass'],
+    urlSite: 'google.com',
+    imgUrl: 'img/site2.jpg',
+  },
+  {
+    title: 'Site Personnel',
+    description: ['Site portfolio suivant le thème de jeu-vidéo. '],
+    icons: ['html', 'css', 'js', 'vue', 'nuxt', 'tw', 'sass'],
+    urlSite: 'google.com',
+    urlCode: 'github.com',
+    imgUrl: 'img/site1.jpg',
   },
 ];
 </script>

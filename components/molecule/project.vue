@@ -17,8 +17,8 @@
     </div>
     <div class="flex flex-col gap-3" :class="index % 2 === 0 ? '-order-1' : ''">
       <h3>{{ info.title }}</h3>
-      <p>
-        {{ info.description }}
+      <p v-for="des in info.description">
+        {{ des }}
       </p>
       <div class="flex gap-5">
         <AtomIcons
@@ -29,16 +29,17 @@
         />
       </div>
       <div class="flex gap-4 mt-16">
-        <AtomSimpleButton
+        <a
+          :href="info.urlSite"
           v-if="info.urlSite"
-          class="w-5/12 h-10 flex items-center justify-center gap-3"
+          class="w-5/12 h-10 flex items-center justify-center gap-3 font-semibold py-1 button"
           >Voir en ligne <AtomIcons class="h-6" icon="eye" no-label
-        /></AtomSimpleButton>
-        <AtomSimpleButton
+        /></a>
+        <a
           v-if="info.urlCode"
-          class="w-5/12 h-10 flex items-center justify-center gap-3"
+          class="w-5/12 h-10 flex items-center justify-center gap-3 font-semibold py-1 button"
           >Lire le code <AtomIcons class="h-6" icon="git" no-label
-        /></AtomSimpleButton>
+        /></a>
       </div>
     </div>
   </div>
