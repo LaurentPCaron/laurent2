@@ -51,7 +51,7 @@ const phData: ISkill[] = [
   {
     title: 'Site Personnel',
     description: ['Site portfolio suivant le thème de jeu-vidéo. '],
-    icons: ['html', 'css', 'js', 'vue', 'nuxt', 'tw', 'sass'],
+    icons: ['html', 'css', 'js', 'vue', 'nuxt', 'tw', 'sass', 'aws'],
     urlSite: 'google.com',
     urlCode: 'github.com',
     imgUrl: 'img/site1.jpg',

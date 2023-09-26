@@ -9,5 +9,6 @@
   { "code": "bs", "faIcon": "fa-brands fa-bootstrap", "label": "Bootstrap" },
   { "code": "git", "faIcon": "fa-brands fa-github", "label": "Git" },
   { "code": "vscode", "icon": "img/icons/vscode.svg", "label": "VS Code" },
-  { "code": "eye", "faIcon": "fa-solid fa-eye", "label": "Oeil" }
+  { "code": "eye", "faIcon": "fa-solid fa-eye", "label": "Oeil" },
+  { "code": "aws", "faIcon": "fa-brands fa-aws", "label": "Amazon Web Server" }
 ]
