@@ -20,8 +20,8 @@
             </p>
           </div>
           <h3>Mes skills</h3>
-          <ul class="flex gap-16 mx-auto">
-            <li v-for="s in skills" class="h-16">
+          <ul class="flex gap-16 mx-auto flex-wrap">
+            <li v-for="s in skills" class="h-16 w-1/5 md:w-1/6">
               <AtomIcons class="h-full" :icon="s" show-caption />
             </li>
           </ul>

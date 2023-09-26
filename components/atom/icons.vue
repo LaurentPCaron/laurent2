@@ -1,5 +1,9 @@
 <template>
-  <figure v-if="icon.icon || icon.faIcon" :class="showCaption ? 'icon ' : ''">
+  <figure
+    class="h-fit"
+    v-if="icon.icon || icon.faIcon"
+    :class="showCaption ? 'icon ' : ''"
+  >
     <img class="h-full mx-auto" v-if="icon.icon" :src="icon?.icon" alt="" />
     <font-awesome-icon
       class="h-full mx-auto"
@@ -35,7 +39,7 @@ const icon = skills.find(i => {
 <style lang="scss" scoped>
 .icon {
   display: grid;
-  grid-template-rows: 75% auto;
+  grid-template-rows: 45px auto;
   row-gap: 5px;
 }
 </style>

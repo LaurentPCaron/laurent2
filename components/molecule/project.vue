@@ -39,13 +39,18 @@
         {{ des }}
       </p>
     </div>
-    <div class="area-icons flex flex-wrap justify-self-start gap-5">
-      <AtomIcons
-        class="h-14 aspect-square w-1/5"
-        :icon="icon"
-        show-caption
-        v-for="icon in info.icons"
-      />
+
+    <!--Icons -->
+    <div class="area-icons">
+      <p class="pb-5"><strong>Technologies utilisées</strong></p>
+      <div class="flex flex-wrap justify-self-start gap-5 gap-y-10">
+        <AtomIcons
+          class="h-14 aspect-square w-1/5"
+          :icon="icon"
+          show-caption
+          v-for="icon in info.icons"
+        />
+      </div>
     </div>
   </div>
 </template>
